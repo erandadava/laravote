@@ -1,3 +1,31 @@
+## WHAT TO DO
+
+<ul>
+    <li>git clone</li>
+    <li>composer update / composer install</li>
+    <li>php artisan key:generate</li>
+    <li>Add this following line on <b>config/app.php</b> :  </li>
+    
+    'providers' => [
+        ....
+
+        Overtrue\LaravelFollow\FollowServiceProvider::class,
+
+    ],
+
+
+
+    
+<li>php artisan vendor:publish --provider='Overtrue\LaravelFollow\FollowServiceProvider' --tag="migrations"</li>
+<li> php artisan make:auth </li>
+<li> php artisan migrate </li>
+<li> php artisan db:seed --class=CreateDummyPost </li>
+<li> php artisan serve </li>
+</ul>
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
